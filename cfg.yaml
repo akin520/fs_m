@@ -1,0 +1,28 @@
+redis:
+    ip: "127.0.0.1"
+    port: "6379"
+monitor:
+    - "/fh21_data/fh21_web"
+    - "/etc"
+exclude:
+    - 'error_log.php'
+    - 'process_info.log'
+    - 'advertest'
+    - 'media.xml'
+    - 'application.log'
+suffix:
+    - '.swp'
+    - '.swpx'
+    - '.swx'
+prefix:
+    - '.adkeyword.tree'
+    - '.adkeyword.conf'
+    - '.adkeywordlink.tree'
+    - '.adkeywordlink.conf'
+    - '.error_log.php'
+paths:
+    - '/fh21_data/fh21_web/supervisor/cmsredis/logs'
+    - '/fh21_data/fh21_web/supervisor/beanstalkd/logs'
+customs:
+    - 'request'
+
